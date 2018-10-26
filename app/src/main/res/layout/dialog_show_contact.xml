@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorShow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_dialog"
+        android:gravity="center"
+        android:text="@string/show_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_show_phone"
+        android:textColor="@color/colorBlack"
+        android:inputType="number"
+        android:hint="@string/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_show_name"
+        android:textColor="@color/colorBlack"
+        android:hint="@string/phonename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/btn_dialog"
+            android:id="@+id/btn_show_dialog_delete"
+            android:textAllCaps="false"
+            android:text="@string/delete"
+            android:layout_marginRight="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/btn_dialog"
+            android:id="@+id/btn_show_dialog_save"
+            android:textAllCaps="false"
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
